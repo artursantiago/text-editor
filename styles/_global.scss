@@ -1,0 +1,36 @@
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*, :after, :before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  min-height: 90vh;
+  padding: 8rem;
+}
+
+label, li, button, p, textarea {
+  color: $light-theme-text;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+textarea {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}

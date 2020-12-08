@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta 
+    name="description" 
+    content="A Simple text editor made with html, css and javascript."
+  >
+  <meta name="robots" content="index,follow">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c939d0e917.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Text Editor</title>
+</head>
+<body>
+  <main>
+    <div class="main-head">
+      <h1>Text Editor</h1>
+      <div class="options">
+        <ul>
+          <li><button onclick="makeBold(this)">Bold</button></li>
+          <li><button onclick="makeItalic(this)">Italic</button></li>
+          <li><button onclick="makeUnderline(this)">Underline</button></li>
+          <li><button onclick="alignText(this, 'left')" class="align"><i class="fas fa-align-left"></i></button></li>
+          <li><button onclick="alignText(this, 'center')" class="align"><i class="fas fa-align-center"></i></button></li>
+          <li><button onclick="alignText(this, 'right')" class="align"><i class="fas fa-align-right"></i></button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-info">
+      <div class="user-area">
+        <label for="user-textarea">Your Document Text</label>
+        <textarea onkeyup="updateText(event)" name="user-textarea" id="user-textarea"></textarea>
+      </div>
+      <div class="formatted-area">
+        <label for="formatted-textarea">Formatted Text</label>
+        <div id="formatted-textarea">
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <h4>Artur Santiago &copy;</h4>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

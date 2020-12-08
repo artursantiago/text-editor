@@ -1,0 +1,200 @@
+html {
+  font-size: 62.5%;
+}
+
+*, :after, :before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  min-height: 90vh;
+  padding: 8rem;
+}
+
+label, li, button, p, textarea {
+  color: #212529;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+textarea {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.main-head {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+
+.main-head h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: 1rem;
+  color: #3700B3;
+}
+
+.main-head ul {
+  padding: 3rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main-head ul li {
+  list-style: none;
+}
+
+.main-head button {
+  background: #f8f9fa;
+  padding: 1rem 1rem;
+  border: .3rem solid #f8f9fa;
+  border-radius: .3rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.main-head button:hover, .main-head button.active {
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+}
+
+.main-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 60%;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-info label {
+  padding-bottom: 2rem;
+}
+
+.user-area {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+  padding-right: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.user-area #user-textarea {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  min-height: 20rem;
+  border-radius: .3rem;
+  padding: 1rem;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.formatted-area {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+  padding-left: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formatted-area #formatted-textarea {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  min-height: 20rem;
+  border-radius: .3rem;
+  padding: 1rem;
+  word-wrap: break-word;
+  text-align: left;
+  background: #f8f9fa;
+}
+
+footer {
+  min-height: 10vh;
+  background-color: #3700B3;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */

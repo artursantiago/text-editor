@@ -1,0 +1,87 @@
+
+.main-head {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+
+  h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    color: $light-theme-header;
+  }
+
+  ul {
+    padding: 3rem 0rem;
+    @include flex(space-between, center, row);
+    li {
+      list-style: none;
+    }
+  }
+
+  button {
+    background: #f8f9fa;
+    padding: 1rem 1rem;
+    border: .3rem solid #f8f9fa;
+    border-radius: .3rem;
+    transition: all .3s ease;
+    cursor: pointer;
+
+    &:hover, &.active {
+      background-color: #e2e6ea;
+      border-color: #dae0e5;
+    }
+  }
+}
+
+.main-info {
+  @include flex(space-between, center, row);
+  width: 60%;
+  margin: auto;
+  flex-wrap: wrap;
+
+  label {
+    padding-bottom: 2rem;
+  }
+}
+
+.user-area {
+  flex: 1 1 30rem;
+  padding-right: 1.5rem;
+  @include flex(center, center, column);
+
+  #user-textarea {
+    align-self: stretch;
+    min-height: 20rem;  
+    border-radius: .3rem;
+    padding: 1rem;
+    word-wrap: break-word;
+    text-align: left;
+  }
+}
+
+.formatted-area {
+  flex: 1 1 30rem;
+  padding-left: 1.5rem;
+  @include flex(center, center, column);
+
+  #formatted-textarea {
+    align-self: stretch;
+
+    min-height: 20rem;
+    border-radius: .3rem;
+    padding: 1rem;
+    word-wrap: break-word;
+    text-align: left;
+    background: #f8f9fa;
+  }
+}
+
+footer {
+  min-height: 10vh;
+  background-color: $light-theme-header;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  @include flex(center, center, row);
+}

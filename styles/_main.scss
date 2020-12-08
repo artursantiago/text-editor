@@ -1,6 +1,10 @@
+main {
+  min-height: 90vh;
+  padding: 8rem;
+}
 
 .main-head {
-  width: 30%;
+  max-width: 30%;
   margin: auto;
   text-align: center;
 
@@ -13,9 +17,11 @@
 
   ul {
     padding: 3rem 0rem;
-    @include flex(space-between, center, row);
+    @include flex(center, center, row);
+    flex-wrap: wrap;
     li {
       list-style: none;
+      padding: .5rem;
     }
   }
 
@@ -36,9 +42,11 @@
 
 .main-info {
   @include flex(space-between, center, row);
-  width: 60%;
+  padding: 4rem 0rem;
+  max-width: 60%;
   margin: auto;
   flex-wrap: wrap;
+  gap: 1.6rem;
 
   label {
     padding-bottom: 2rem;
@@ -47,11 +55,11 @@
 
 .user-area {
   flex: 1 1 30rem;
-  padding-right: 1.5rem;
   @include flex(center, center, column);
 
   #user-textarea {
-    align-self: stretch;
+    // align-self: auto;
+    width: 100%;
     min-height: 20rem;  
     border-radius: .3rem;
     padding: 1rem;
@@ -62,7 +70,7 @@
 
 .formatted-area {
   flex: 1 1 30rem;
-  padding-left: 1.5rem;
+  max-width: 50%;
   @include flex(center, center, column);
 
   #formatted-textarea {

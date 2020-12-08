@@ -21,3 +21,24 @@ $secondary: #03DAC6;
 .underline {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 1213px) {
+  .formatted-area {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 943px) {
+  html {
+    font-size: 53%;
+  }
+
+  main {
+    padding: 8rem 2rem;
+  }
+
+  .main-head, 
+  .main-info {
+    max-width: 100%;
+  }
+}

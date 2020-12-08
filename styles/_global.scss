@@ -13,15 +13,11 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: all .3s ease;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
-}
-
-main {
-  min-height: 90vh;
-  padding: 8rem;
 }
 
 label, li, button, p, textarea {

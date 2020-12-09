@@ -13,15 +13,16 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  transition: all .3s ease;
+  // transition: all .3s ease;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background: $bg;
 }
 
 label, li, button, p, textarea {
-  color: $light-theme-text;
+  // color: $color-text;
   font-weight: 500;
   font-size: 2rem;
 }

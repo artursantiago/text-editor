@@ -7,16 +7,14 @@ html {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background: white;
 }
 
 label, li, button, p, textarea {
-  color: #212529;
   font-weight: 500;
   font-size: 2rem;
 }
@@ -29,6 +27,23 @@ textarea {
 main {
   min-height: 90vh;
   padding: 8rem;
+}
+
+.theme {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+}
+
+.dark {
+  cursor: pointer;
+  color: white;
+  background: #3700B3;
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 0rem 0.3rem 1rem rgba(0, 0, 0, 0.2), 0rem 0.6rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0rem 0.3rem 1rem rgba(0, 0, 0, 0.2), 0rem 0.6rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .main-head {
@@ -71,7 +86,7 @@ main {
 .main-head button {
   background: #f8f9fa;
   padding: 1rem 1rem;
-  border: .3rem solid #f8f9fa;
+  border: 0.3rem solid #f8f9fa;
   border-radius: .3rem;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
@@ -79,7 +94,7 @@ main {
 }
 
 .main-head button:hover, .main-head button.active {
-  background-color: #e2e6ea;
+  background-color: #e3e7eb;
   border-color: #dae0e5;
 }
 
@@ -172,7 +187,7 @@ main {
 footer {
   min-height: 10vh;
   background-color: #3700B3;
-  color: #ffffff;
+  color: white;
   font-size: 1.6rem;
   font-weight: 500;
   display: -webkit-box;
@@ -188,6 +203,43 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.dark-theme {
+  background: #202529;
+}
+
+.dark-theme .theme button {
+  background: #BB86FC;
+  -webkit-box-shadow: 0rem 0.3rem 1rem rgba(255, 255, 255, 0.3), 0rem 0.6rem 2rem rgba(255, 255, 255, 0.3);
+          box-shadow: 0rem 0.3rem 1rem rgba(255, 255, 255, 0.3), 0rem 0.6rem 2rem rgba(255, 255, 255, 0.3);
+}
+
+.dark-theme .main-head h1 {
+  color: #BB86FC;
+}
+
+.dark-theme .main-head button {
+  background: #03DAC6;
+  border-color: #03DAC6;
+}
+
+.dark-theme .main-head button:hover, .dark-theme .main-head button.active {
+  color: white;
+  background: #657a8e;
+  border-color: #bdc6d0;
+}
+
+.dark-theme .main-info label {
+  color: white;
+}
+
+.dark-theme .formatted-area #formatted-textarea {
+  background: #03DAC6;
+}
+
+.dark-theme footer {
+  background: #BB86FC;
 }
 
 .bold {

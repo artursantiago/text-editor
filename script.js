@@ -1,4 +1,4 @@
-function updateText(event) {
+function updateText() {
   const text = document.querySelector("#user-textarea").value;
 
   let outputText = document.querySelector('#formatted-textarea p');
@@ -27,3 +27,16 @@ function alignText(elem, alignType) {
   elem.classList.toggle('active');
   document.querySelector('#formatted-textarea p').style.textAlign = alignType;
 }
+
+window.onload = () => {
+  updateText();
+}
+
+// Dark Theme Thing
+
+const darkThemeButton = document.querySelector('button.dark');
+
+darkThemeButton.addEventListener('click', () => {
+  darkThemeButton.classList.toggle('active');
+  document.body.classList.toggle('dark-theme');
+})

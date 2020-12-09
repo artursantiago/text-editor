@@ -1,0 +1,43 @@
+.dark-theme {
+  background: $bg-dark;
+
+  .theme {
+    button {
+      background: $blue-variant-dark;
+      box-shadow: 0rem .3rem 1rem rgba($color: white, $alpha: 0.3),
+                  0rem .6rem 2rem rgba($color: white, $alpha: 0.3);
+    }
+  }
+
+  .main-head {
+    h1 {
+      color: $blue-variant-dark;
+    }
+    button {
+      background: $gray-variant-dark;
+      border-color: $gray-variant-dark;
+
+      &:hover, &.active {
+        color: white;
+        background: darken($color: $gray-variant, $amount: 50%);
+        border-color: darken($color: $gray-variant, $amount: 20%);
+      }
+    }
+  }
+
+  .main-info {
+    label {
+      color: white;
+    }
+  }
+
+  .formatted-area {
+    #formatted-textarea {
+      background: $gray-variant-dark;
+    }
+  }
+
+  footer {
+    background: $blue-variant-dark;
+  }
+} 

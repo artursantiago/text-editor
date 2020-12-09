@@ -1,14 +1,16 @@
-$dark-theme-bg: #121212;
-$dark-theme-text: white;
-$dark-theme-header: #BB86FC;
-$light-theme-bg: white;
-$light-theme-text: #212529;
-$light-theme-header: #3700B3;
-$secondary: #03DAC6;
-// #f8f9fa
+$bg-dark: rgb(32, 37, 41);
+// $dark-theme-text: white;
+$blue-variant-dark: #BB86FC;
+$gray-variant-dark: #03DAC6; 
+
+$bg: white;
+$color-text: #212529;
+$blue-variant: #3700B3;
+$gray-variant: #f8f9fa; 
 
 @import "global.scss";
 @import "main.scss";
+@import "dark-theme.scss";
 
 .bold {
   font-weight: bold;

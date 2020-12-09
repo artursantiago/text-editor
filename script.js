@@ -1,26 +1,26 @@
-function updateText() {
+updateText = () => {
   const text = document.querySelector("#user-textarea").value;
 
   let outputText = document.querySelector('#formatted-textarea p');
   outputText.innerText = text;
 }
 
-function makeBold(elem) {
+makeBold = (elem) => {
   elem.classList.toggle('active');
   document.querySelector('#formatted-textarea p').classList.toggle('bold');
 }
 
-function makeItalic(elem) {
+makeItalic = (elem) => {
   elem.classList.toggle('active');
   document.querySelector('#formatted-textarea p').classList.toggle('italic');
 }
 
-function makeUnderline(elem) {
+makeUnderline = (elem) => {
   elem.classList.toggle('active');
   document.querySelector('#formatted-textarea p').classList.toggle('underline');
 }
 
-function alignText(elem, alignType) {
+alignText = (elem, alignType) => {
   let selectedAlign = document.querySelector('.align.active');
   if (selectedAlign) selectedAlign.classList.toggle('active');
 
